@@ -5,9 +5,9 @@ from Decoder import Decoder
 
 
 
-class HFANet(nn.Module):
+class DVM_Net(nn.Module):
     def __init__(self, input_channel, input_size):
-        super(HFANet, self).__init__()
+        super(DVM_Net, self).__init__()
         self.encoder = Encoder(input_channel=input_channel, input_size=input_size)
 
         self.decoder = Decoder(input_channel=1024, input_size=16)
